@@ -70,16 +70,12 @@
 }
 
 @media (min-width: 768px) {
-  /* .app-store-bg-container {
-    height: 100%;
-  } */
-
   .app-store-header {
-    /* font-size: 3rem; */
+    font-size: 3rem;
   }
 
   .app-store-search-container {
-    /* width: 35vw; */
+    width: 35vw;
   }
 
   .app-store-apps-container {

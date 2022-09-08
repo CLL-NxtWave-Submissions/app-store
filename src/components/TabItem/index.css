@@ -2,7 +2,7 @@
   color: #7b8794;
   border: none;
   border-bottom: 0.15rem solid #7b8794;
-  padding: 1rem 0.7rem;
+  padding: 0.7rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -33,4 +33,13 @@
 .tab-item,
 .tab-item-button {
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .tab-item {
+    padding: 0.5rem 0.7rem;
+  }
+  .tab-item-button {
+    font-size: 1.2rem;
+  }
 }
