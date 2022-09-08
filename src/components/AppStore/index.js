@@ -314,6 +314,35 @@ export default class AppStore extends Component {
   render() {
     const {searchInput, selectedTabId} = this.state
 
-    return <div className="app-store-bg-container"></div>
+    return (
+      <div className="app-store-bg-container">
+        <div className="app-store-content-container">
+          <h1 className="app-store-header">App Store</h1>
+          <div className="app-store-search-container">
+            <input
+              className="app-store-search-input"
+              type="search"
+              onChange={this.onSearchInputChange}
+              name="search-input"
+              value={searchInput}
+            />
+            <img
+              className="app-store-search-icon-img"
+              src="https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png"
+              alt="search icon"
+            />
+          </div>
+          <div className="app-store-tabs-container">
+            {tabsList.map(tabListItem => (
+              <TabItem
+                itemData={tabListItem}
+                itemSelectHandler={this.onTabSelect}
+                isSelected={tabListItem.tabId === selectedTabId}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    )
   }
 }
