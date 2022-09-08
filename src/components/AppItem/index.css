@@ -6,8 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 0.2rem;
-  margin-bottom: 0.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 4rem;
+  height: 8rem;
 }
 
 .app-item-img {
@@ -20,4 +22,21 @@
   font-family: 'Bree Serif';
   font-size: 1rem;
   color: #1e293b;
+}
+
+@media (min-width: 768px) {
+  .app-item-bg-container {
+    width: 10rem;
+    height: 11rem;
+  }
+
+  .app-item-img {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-item-name {
+    font-size: 1.2rem;
+  }
 }

@@ -351,6 +351,7 @@ export default class AppStore extends Component {
           <ul className="app-store-tabs-container">
             {tabsList.map(tabsListItem => (
               <TabItem
+                key={tabsListItem.tabId}
                 itemData={tabsListItem}
                 itemSelectHandler={this.onTabSelect}
                 isSelected={tabsListItem.tabId === selectedTabId}
@@ -360,7 +361,7 @@ export default class AppStore extends Component {
 
           <ul className="app-store-apps-container">
             {matchingAppItemsList.map(appsListItem => (
-              <AppItem itemData={appsListItem} />
+              <AppItem key={appsListItem.appId} itemData={appsListItem} />
             ))}
           </ul>
         </div>

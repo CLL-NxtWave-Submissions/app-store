@@ -56,7 +56,7 @@
 
 .app-store-apps-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -68,6 +68,10 @@
 }
 
 @media (min-width: 768px) {
+  .app-store-bg-container {
+    height: 100%;
+  }
+
   .app-store-search-container {
     width: auto;
   }
