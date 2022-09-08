@@ -10,3 +10,14 @@
   color: #2563eb;
   border-bottom-color: #2563eb;
 }
+
+.tab-item-button {
+  background: inherit;
+  border: none;
+  outline: none;
+}
+
+.tab-item,
+.tab-item-button {
+  cursor: pointer;
+}
