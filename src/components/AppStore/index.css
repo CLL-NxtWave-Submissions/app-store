@@ -1,11 +1,11 @@
 .app-store-bg-container {
   background-image: linear-gradient(to bottom, #fff1eb, #ace0f9);
   background-size: cover;
-  height: 100vh;
-  padding: 2rem;
+  min-height: 120vh;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .app-store-content-container {
@@ -14,11 +14,12 @@
   justify-content: center;
   align-items: center;
   font-family: 'Bree Serif';
+  height: 100%;
 }
 
 .app-store-header {
   color: #1e293b;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -29,8 +30,8 @@
   border: 0.1rem solid #7b8794;
   padding: 0.5rem 0.2rem;
   color: #7b8794;
-  margin-bottom: 1rem;
-  width: 100%;
+  /* margin-bottom: 1rem; */
+  /* width: 100%; */
 }
 
 .app-store-search-input {
@@ -51,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .app-store-apps-container {
@@ -59,6 +60,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  /* height: 100%; */
 }
 
 .app-store-tabs-container,
@@ -68,15 +70,19 @@
 }
 
 @media (min-width: 768px) {
-  .app-store-bg-container {
+  /* .app-store-bg-container {
     height: 100%;
+  } */
+
+  .app-store-header {
+    /* font-size: 3rem; */
   }
 
   .app-store-search-container {
-    width: auto;
+    /* width: 35vw; */
   }
 
   .app-store-apps-container {
-    width: 60vw;
+    width: 50vw;
   }
 }

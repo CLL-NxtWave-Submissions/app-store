@@ -6,16 +6,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   margin-bottom: 1rem;
-  width: 4rem;
-  height: 8rem;
+  width: 8.5rem;
+  height: 9.5rem;
 }
 
 .app-item-img {
-  height: 3rem;
-  width: 3rem;
-  margin-bottom: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+  margin-top: 1rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .app-item-name {
@@ -31,12 +33,14 @@
   }
 
   .app-item-img {
-    height: 5rem;
-    width: 5rem;
-    margin-bottom: 0.5rem;
+    height: 7rem;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .app-item-name {
     font-size: 1.2rem;
+    margin-top: 0;
   }
 }
