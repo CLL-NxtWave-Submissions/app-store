@@ -293,6 +293,18 @@ const appsList = [
   },
 ]
 
+const getFilteredAppItems = (chosenCategory, userSearchInput) => {
+  const filteredAppItems = appsList.filter(
+    appsListItem =>
+      appsListItem.category === chosenCategory &&
+      appsListItem.appName
+        .toLowerCase()
+        .includes(userSearchInput.toLowerCase()),
+  )
+
+  return filteredAppItems
+}
+
 export default class AppStore extends Component {
   state = {
     searchInput: '',
@@ -314,6 +326,7 @@ export default class AppStore extends Component {
 
   render() {
     const {searchInput, selectedTabId} = this.state
+    const matchingAppItemsList = getFilteredAppItems(selectedTabId, searchInput)
 
     return (
       <div className="app-store-bg-container">
@@ -346,7 +359,7 @@ export default class AppStore extends Component {
           </ul>
 
           <ul className="app-store-apps-container">
-            {appsList.map(appsListItem => (
+            {matchingAppItemsList.map(appsListItem => (
               <AppItem itemData={appsListItem} />
             ))}
           </ul>

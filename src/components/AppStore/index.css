@@ -66,3 +66,13 @@
   list-style-type: none;
   padding-left: 0;
 }
+
+@media (min-width: 768px) {
+  .app-store-search-container {
+    width: auto;
+  }
+
+  .app-store-apps-container {
+    width: 60vw;
+  }
+}
