@@ -323,6 +323,7 @@ export default class AppStore extends Component {
               className="app-store-search-input"
               type="search"
               onChange={this.onSearchInputChange}
+              placeholder="Search"
               name="search-input"
               value={searchInput}
             />

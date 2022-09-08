@@ -19,7 +19,7 @@
 .app-store-header {
   color: #1e293b;
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .app-store-search-container {
@@ -27,16 +27,19 @@
   align-items: center;
   border-radius: 0.4rem;
   border: 0.1rem solid #7b8794;
-  padding: 0.5rem;
+  padding: 0.5rem 0.2rem;
   color: #7b8794;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .app-store-search-input {
   border: none;
   background: inherit;
-  font-size: 1.5rem;
+  font-size: 1rem;
   flex-grow: 1;
+  outline: none;
+  padding-left: 1rem;
 }
 
 .app-store-search-icon-img {
@@ -50,4 +53,11 @@
   align-items: center;
   list-style-type: none;
   padding-left: 0;
+}
+
+.app-store-apps-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }

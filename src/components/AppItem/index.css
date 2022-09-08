@@ -1,1 +1,23 @@
-/* Write your CSS here */
+.app-item-bg-container {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.app-item-img {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-item-name {
+  font-family: 'Bree Serif';
+  font-size: 1rem;
+  color: #1e293b;
+}

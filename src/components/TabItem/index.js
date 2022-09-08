@@ -5,6 +5,9 @@ const TabItem = props => {
   const {tabId, displayText} = itemData
 
   const itemStyling = isSelected ? 'tab-item selected-tab-item' : 'tab-item'
+  //   const itemButtonStyling = isSelected
+  //     ? 'tab-item-button selected-tab-item-button'
+  //     : 'tab-item-button'
 
   const itemClickHandler = () => {
     itemSelectHandler(tabId)

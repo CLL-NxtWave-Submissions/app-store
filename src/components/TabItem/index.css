@@ -1,21 +1,34 @@
 .tab-item {
   color: #7b8794;
   border: none;
-  border-bottom: 0.1rem solid #dfe2e5;
-  padding: 0.5rem;
-  font-size: 1rem;
+  border-bottom: 0.15rem solid #7b8794;
+  padding: 1rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .selected-tab-item {
   color: #2563eb;
   border-bottom-color: #2563eb;
+  justify-content: flex-start;
 }
 
 .tab-item-button {
   background: inherit;
   border: none;
   outline: none;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  /* padding: 0; */
 }
+
+/* .selected-tab-item-button {
+  margin-bottom: 0.3rem;
+} */
 
 .tab-item,
 .tab-item-button {
