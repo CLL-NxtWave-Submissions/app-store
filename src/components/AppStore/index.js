@@ -1,3 +1,8 @@
+import {Component} from 'react'
+import './index.css'
+
+import TabItem from '../TabItem'
+
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
   {tabId: 'GAMES', displayText: 'Games'},
@@ -287,4 +292,28 @@ const appsList = [
   },
 ]
 
-// Write your code here
+export default class AppStore extends Component {
+  state = {
+    searchInput: '',
+    selectedTabId: 'SOCIAL',
+  }
+
+  onSearchInputChange = searchInputChangeEvent => {
+    const userSearchInput = searchInputChangeEvent.target.value
+
+    this.setState({
+      searchInput: userSearchInput,
+    })
+  }
+
+  onTabSelect = clickedTabId =>
+    this.setState({
+      selectedTabId: clickedTabId,
+    })
+
+  render() {
+    const {searchInput, selectedTabId} = this.state
+
+    return <div className="app-store-bg-container"></div>
+  }
+}
