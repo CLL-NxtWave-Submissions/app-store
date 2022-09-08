@@ -1,1 +1,12 @@
-/* Write your CSS here */
+.tab-item {
+  color: #7b8794;
+  border: none;
+  border-bottom: 0.1rem solid #dfe2e5;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.selected-tab-item {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
