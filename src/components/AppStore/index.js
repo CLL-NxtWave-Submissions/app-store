@@ -2,6 +2,7 @@ import {Component} from 'react'
 import './index.css'
 
 import TabItem from '../TabItem'
+import AppItem from '../AppItem'
 
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
@@ -333,13 +334,20 @@ export default class AppStore extends Component {
               alt="search icon"
             />
           </div>
+
           <div className="app-store-tabs-container">
-            {tabsList.map(tabListItem => (
+            {tabsList.map(tabsListItem => (
               <TabItem
-                itemData={tabListItem}
+                itemData={tabsListItem}
                 itemSelectHandler={this.onTabSelect}
-                isSelected={tabListItem.tabId === selectedTabId}
+                isSelected={tabsListItem.tabId === selectedTabId}
               />
+            ))}
+          </div>
+
+          <div className="app-store-apps-container">
+            {appsList.map(appsListItem => (
+              <AppItem itemData={appsListItem} />
             ))}
           </div>
         </div>
